@@ -1,46 +1,41 @@
 @ECHO OFF
 mode con: lines=68
-ECHO Ping To MM CSGO Servers v1.0 by Weeeishy - November 9th 2017 
+ECHO Ping To FaceIT Europe CSGO Servers v1.0 by Weeeishy - November 9th 2017 
 ECHO ============================================================= 
 ECHO -AUTO PING MODE is (ENABLED)- Please wait while first pings are loading...
 :top
 color 07
-TITLE Ping To MM CSGO Servers v1.0 by Weeeishy - November 9th 2017  (AUTO PING MODE)
+TITLE Ping To FaceIT Europe CSGO Servers v1.0 by Weeeishy - November 9th 2017   (AUTO PING MODE)
 :pads
-CALL:pingtest1 146.66.152.17 155.133.248.12 146.66.155.12 185.25.182.1
-CALL:pingtest2 103.28.54.3 103.10.124.9 45.121.184.1 185.25.183.4
-CALL:pingtest3 146.66.156.211 146.66.180.211 155.133.228.100 155.133.241.24
-CALL:pingtest4 155.133.246.13 155.133.247.16
+CALL:pingtest1 88.198.52.17 148.251.124.133 46.4.35.143 82.145.38.9
+CALL:pingtest2 185.16.86.1 62.210.84.115 195.154.170.125 163.172.8.51
+CALL:pingtest3 195.154.170.125 46.166.189.17 185.16.84.57 31.3.153.21
+CALL:pingtest4 185.62.207.33
 CLS
-ECHO Ping To MM CSGO Servers v1.0 by Weeeishy - November 9th 2017 
+ECHO Ping To FaceIT Europe CSGO Servers v1.0 by Weeeishy - November 9th 2017 
 ECHO ============================================================= 
-ECHO.[EU West]
-ECHO - EU West, LUX (146.66.153.12):				(%ms1%)
-ECHO - EU West, LUX (155.133.248.12):				(%ms2%)
+ECHO.[Germany]
+ECHO - Germany, DE (88.198.52.17):				(%ms1%)
+ECHO - Germany, DE (148.251.124.133):				(%ms2%)
+ECHO - Germany, DE (46.4.35.143):				(%ms3%)
 ECHO.
-ECHO.[EU East]
-ECHO - EU East, VIE (146.66.155.12) :			(%ms3%)
-ECHO - EU East, VIE (146.66.155.1) :			(%ms4%)
+ECHO.[Great Britain]
+ECHO - Great Britain, UK (82.145.38.91) :			(%ms4%)
+ECHO - Great Britain, UK (185.16.86.1) :			(%ms5%)
+ECHO - Great Britain, UK (87.117.219.99) :			(%ms6%)
 ECHO.
-ECHO.[SEA]
-ECHO - Singapore, SG (103.28.54.3):				(%ms5%)
-ECHO - Singapore, SG (103.10.124.9):				(%ms6%)
-ECHO - Singapore, SG (45.121.184.1):				(%ms7%)
+ECHO.[France]
+ECHO - France, FR (62.210.84.115):				(%ms7%)
+ECHO - France, FR (163.172.8.51):				(%ms8%)
+ECHO - France, FR (195.154.170.125):				(%ms9%)
 ECHO.
-ECHO.[MiddleEast]
-ECHO - UAE, Dubai (185.25.183.4):		        (%ms8%)
+ECHO.[Netherlands]
+ECHO - Netherlands, NL (46.166.189.17):		        (%ms10%)
+ECHO - Netherlands, NL (185.16.84.57):		        (%ms11%)
 ECHO.
 ECHO.[Sweden]
-ECHO - Sweden, SE (146.66.156.211)               	        (%ms9%)
-ECHO - Sweden, SE (146.66.180.211)               	        (%ms10%)
-ECHO.
-ECHO.[Poland]
-ECHO - Poland, PL (155.133.228.100)               	        (%ms11%)
-ECHO - Poland, PL (155.133.241.24)               	        (%ms12%)
-ECHO.
-ECHO.[Spain]
-ECHO - Spain, ES (155.133.246.13)               	        (%ms13%)
-ECHO - Spain, ES (155.133.247.16)               	        (%ms14%)
+ECHO - Sweden, SE (31.3.153.21)               	        (%ms12%)
+ECHO - Sweden, SE (185.62.207.33)               	        (%ms13%)
 ECHO.
 ECHO ============================================================= 
 ECHO -AUTO PING MODE is (ENABLED)- The pings will automatically keep refreshing.
@@ -52,13 +47,13 @@ SET ms1=ERROR
 SET ms2=ERROR
 SET ms3=ERROR
 SET ms4=ERROR
-ECHO + Pinging (EU West)
+ECHO + Pinging (Germany)
 FOR /F "tokens=4 delims==" %%i IN ('ping.exe -n 1 %1 ^| FIND "ms"') DO SET ms1=%%i
-ECHO + Pinging (EU West)
+ECHO + Pinging (Germany)
 FOR /F "tokens=4 delims==" %%i IN ('ping.exe -n 1 %2 ^| FIND "ms"') DO SET ms2=%%i
-ECHO + Pinging (EU East)
+ECHO + Pinging (Germany)
 FOR /F "tokens=4 delims==" %%i IN ('ping.exe -n 1 %3 ^| FIND "ms"') DO SET ms3=%%i
-ECHO + Pinging (EU East)
+ECHO + Pinging (UK)
 FOR /F "tokens=4 delims==" %%i IN ('ping.exe -n 1 %4 ^| FIND "ms"') DO SET ms4=%%i
 GOTO:EOF
 
@@ -68,13 +63,13 @@ SET ms5=ERROR
 SET ms6=ERROR
 SET ms7=ERROR
 SET ms8=ERROR
-ECHO + Pinging (SEA)
+ECHO + Pinging (UK)
 FOR /F "tokens=4 delims==" %%i IN ('ping.exe -n 1 %1 ^| FIND "ms"') DO SET ms5=%%i
-ECHO + Pinging (SEA)
+ECHO + Pinging (UK)
 FOR /F "tokens=4 delims==" %%i IN ('ping.exe -n 1 %2 ^| FIND "ms"') DO SET ms6=%%i
-ECHO + Pinging (SEA)
+ECHO + Pinging (France)
 FOR /F "tokens=4 delims==" %%i IN ('ping.exe -n 1 %3 ^| FIND "ms"') DO SET ms7=%%i
-ECHO + Pinging (MiddleEast)
+ECHO + Pinging (France)
 FOR /F "tokens=4 delims==" %%i IN ('ping.exe -n 1 %4 ^| FIND "ms"') DO SET ms8=%%i
 GOTO:EOF
 
@@ -84,13 +79,13 @@ SET ms9=ERROR
 SET ms10=ERROR
 SET ms11=ERROR
 SET ms12=ERROR
-ECHO + Pinging (Sweden)
+ECHO + Pinging (France)
 FOR /F "tokens=4 delims==" %%i IN ('ping.exe -n 1 %1 ^| FIND "ms"') DO SET ms9=%%i
-ECHO + Pinging (Sweden)
+ECHO + Pinging (Netherlands)
 FOR /F "tokens=4 delims==" %%i IN ('ping.exe -n 1 %2 ^| FIND "ms"') DO SET ms10=%%i
-ECHO + Pinging (Poland)
+ECHO + Pinging (Netherlands)
 FOR /F "tokens=4 delims==" %%i IN ('ping.exe -n 1 %3 ^| FIND "ms"') DO SET ms11=%%i
-ECHO + Pinging (Poland)
+ECHO + Pinging (Sweden)
 FOR /F "tokens=4 delims==" %%i IN ('ping.exe -n 1 %4 ^| FIND "ms"') DO SET ms12=%%i
 GOTO:EOF
 
@@ -98,8 +93,6 @@ GOTO:EOF
 ECHO.
 SET ms13=ERROR
 SET ms14=ERROR
-ECHO + Pinging (Spain)
+ECHO + Pinging (Sweeden)
 FOR /F "tokens=4 delims==" %%i IN ('ping.exe -n 1 %1 ^| FIND "ms"') DO SET ms13=%%i
-ECHO + Pinging (Spain)
-FOR /F "tokens=4 delims==" %%i IN ('ping.exe -n 1 %2 ^| FIND "ms"') DO SET ms14=%%i
 GOTO:EOF
