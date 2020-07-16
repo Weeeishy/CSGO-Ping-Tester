@@ -1,30 +1,30 @@
 @ECHO OFF
 mode con: lines=68
-ECHO Ping To MM CSGO Servers v1.0 by Weeeishy - November 9th 2017 
+ECHO Ping To MM CSGO Servers v1.1 by Weeeishy - July 17th 2020
 ECHO ============================================================= 
 ECHO -AUTO PING MODE is (ENABLED)- Please wait while first pings are loading...
 :top
 color 07
-TITLE Ping To MM CSGO Servers v1.0 by Weeeishy - November 9th 2017  (AUTO PING MODE)
+TITLE Ping To MM CSGO Servers v1.1 by Weeeishy - July 17th 2020  (AUTO PING MODE)
 :pads
-CALL:pingtest1 146.66.152.17 155.133.248.12 146.66.155.12 185.25.182.1
-CALL:pingtest2 103.28.54.3 103.10.124.9 45.121.184.1 185.25.183.4
-CALL:pingtest3 146.66.156.211 146.66.180.211 155.133.228.100 155.133.241.24
-CALL:pingtest4 155.133.246.13 155.133.247.16
+CALL:pingtest1 146.66.152.17 155.133.250.1 146.66.155.4 185.25.182.1
+CALL:pingtest2 103.28.54.3 103.10.121.1 45.121.184.1 185.25.183.4
+CALL:pingtest3 146.66.156.211 146.66.180.3 155.133.228.1 155.133.241.24
+CALL:pingtest4 155.133.246.1 155.133.247.1
 CLS
-ECHO Ping To MM CSGO Servers v1.0 by Weeeishy - November 9th 2017 
+ECHO Ping To MM CSGO Servers v1.1 by Weeeishy - July 17th 2020
 ECHO ============================================================= 
 ECHO.[EU West]
 ECHO - EU West, LUX (146.66.153.12):				(%ms1%)
-ECHO - EU West, LUX (155.133.248.12):				(%ms2%)
+ECHO - EU West, LUX (155.133.250.1):				(%ms2%)
 ECHO.
 ECHO.[EU East]
-ECHO - EU East, VIE (146.66.155.12) :			(%ms3%)
+ECHO - EU East, VIE (146.66.155.4) :			(%ms3%)
 ECHO - EU East, VIE (146.66.155.1) :			(%ms4%)
 ECHO.
 ECHO.[SEA]
 ECHO - Singapore, SG (103.28.54.3):				(%ms5%)
-ECHO - Singapore, SG (103.10.124.9):				(%ms6%)
+ECHO - Singapore, SG (103.10.121.1):				(%ms6%)
 ECHO - Singapore, SG (45.121.184.1):				(%ms7%)
 ECHO.
 ECHO.[MiddleEast]
@@ -32,15 +32,15 @@ ECHO - UAE, Dubai (185.25.183.4):		        (%ms8%)
 ECHO.
 ECHO.[Sweden]
 ECHO - Sweden, SE (146.66.156.211)               	        (%ms9%)
-ECHO - Sweden, SE (146.66.180.211)               	        (%ms10%)
+ECHO - Sweden, SE (146.66.180.3)               	        (%ms10%)
 ECHO.
 ECHO.[Poland]
-ECHO - Poland, PL (155.133.228.100)               	        (%ms11%)
+ECHO - Poland, PL (155.133.228.1)               	        (%ms11%)
 ECHO - Poland, PL (155.133.241.24)               	        (%ms12%)
 ECHO.
 ECHO.[Spain]
-ECHO - Spain, ES (155.133.246.13)               	        (%ms13%)
-ECHO - Spain, ES (155.133.247.16)               	        (%ms14%)
+ECHO - Spain, ES (155.133.246.1)               	        (%ms13%)
+ECHO - Spain, ES (155.133.247.1)               	        (%ms14%)
 ECHO.
 ECHO ============================================================= 
 ECHO -AUTO PING MODE is (ENABLED)- The pings will automatically keep refreshing.

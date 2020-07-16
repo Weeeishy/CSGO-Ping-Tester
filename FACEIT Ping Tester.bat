@@ -1,40 +1,40 @@
 @ECHO OFF
 mode con: lines=68
-ECHO Ping To FaceIT Europe CSGO Servers v1.0 by Weeeishy - November 9th 2017 
+ECHO Ping To FaceIT Europe CSGO Servers v1.1 by Weeeishy - July 17th 2020
 ECHO ============================================================= 
 ECHO -AUTO PING MODE is (ENABLED)- Please wait while first pings are loading...
 :top
 color 07
-TITLE Ping To FaceIT Europe CSGO Servers v1.0 by Weeeishy - November 9th 2017   (AUTO PING MODE)
+TITLE Ping To FaceIT Europe CSGO Servers v1.1 by Weeeishy - July 17th 2020  (AUTO PING MODE)
 :pads
-CALL:pingtest1 88.198.52.17 148.251.124.133 46.4.35.143 82.145.38.9
-CALL:pingtest2 185.16.86.1 62.210.84.115 195.154.170.125 163.172.8.51
-CALL:pingtest3 195.154.170.125 46.166.189.17 185.16.84.57 31.3.153.21
+CALL:pingtest1 88.198.52.17 148.251.124.2 46.4.35.143 82.145.38.1
+CALL:pingtest2 185.16.86.1 87.117.219.3 62.210.84.97 163.172.8.1
+CALL:pingtest3 195.154.170.125 46.166.189.17 185.16.85.1 31.3.153.1
 CALL:pingtest4 185.62.207.33
 CLS
-ECHO Ping To FaceIT Europe CSGO Servers v1.0 by Weeeishy - November 9th 2017 
+ECHO Ping To FaceIT Europe CSGO Servers v1.1 by Weeeishy - July 17th 2020 
 ECHO ============================================================= 
 ECHO.[Germany]
 ECHO - Germany, DE (88.198.52.17):				(%ms1%)
-ECHO - Germany, DE (148.251.124.133):				(%ms2%)
+ECHO - Germany, DE (148.251.124.2):				(%ms2%)
 ECHO - Germany, DE (46.4.35.143):				(%ms3%)
 ECHO.
 ECHO.[Great Britain]
-ECHO - Great Britain, UK (82.145.38.91) :			(%ms4%)
+ECHO - Great Britain, UK (82.145.38.1) :			(%ms4%)
 ECHO - Great Britain, UK (185.16.86.1) :			(%ms5%)
-ECHO - Great Britain, UK (87.117.219.99) :			(%ms6%)
+ECHO - Great Britain, UK (87.117.219.3) :			(%ms6%)
 ECHO.
 ECHO.[France]
-ECHO - France, FR (62.210.84.115):				(%ms7%)
-ECHO - France, FR (163.172.8.51):				(%ms8%)
+ECHO - France, FR (62.210.84.97):				(%ms7%)
+ECHO - France, FR (163.172.8.1):				(%ms8%)
 ECHO - France, FR (195.154.170.125):				(%ms9%)
 ECHO.
 ECHO.[Netherlands]
 ECHO - Netherlands, NL (46.166.189.17):		        (%ms10%)
-ECHO - Netherlands, NL (185.16.84.57):		        (%ms11%)
+ECHO - Netherlands, NL (185.16.85.1):		        (%ms11%)
 ECHO.
 ECHO.[Sweden]
-ECHO - Sweden, SE (31.3.153.21)               	        (%ms12%)
+ECHO - Sweden, SE (31.3.153.1)               	        (%ms12%)
 ECHO - Sweden, SE (185.62.207.33)               	        (%ms13%)
 ECHO.
 ECHO ============================================================= 
